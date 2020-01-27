@@ -9,5 +9,6 @@ CREATE TABLE [dbo].[TBL_SS_TEST]
 [SalesOrgNew] [nvarchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [ShortName] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [Business] [nvarchar] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+[Business2] [nvarchar] (3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
