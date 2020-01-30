@@ -1,0 +1,5 @@
+CREATE TABLE [dbo].[DLMTableTest]
+(
+[ID] [int] NOT NULL IDENTITY(1, 1)
+) ON [PRIMARY]
+GO
