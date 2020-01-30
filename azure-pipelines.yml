@@ -1,0 +1,11 @@
+# Starter pipeline
+ task: PowerShell@2
+ inputs:
+    targetType: 'inline'
+    script: |
+      $project = "$(build.sourcesDirectory)\Database"
+      $validateProject = $project | invoke-DatabaseBuild
+      $buildArtifact = $validatedProject | New-DatabaseBuildArtifact -PackageId Mydatabase -PackageVersion 1.0.$env:Build_BuildID
+      $buildArtifact | Export-DatabaseBuildArtifact -Path "C:\Export\buildArtifacts"
+
+
