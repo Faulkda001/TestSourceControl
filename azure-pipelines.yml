@@ -6,6 +6,7 @@
       $project = "$(build.sourcesDirectory)\Database"
       $validateProject = $project | invoke-DatabaseBuild
       $buildArtifact = $validatedProject | New-DatabaseBuildArtifact -PackageId Mydatabase -PackageVersion 1.0.$env:Build_BuildID
+      $buildArtifact | Export-DatabaseBuildArtifact -Path "C:\Export\buildArtifacts"
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
